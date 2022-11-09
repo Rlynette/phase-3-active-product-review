@@ -4,8 +4,7 @@ class User < ActiveRecord::Base
 
     def favorite_product
     # self.products.maximum(:star_rating)
-    review = self.review.order(:star_rating).last
-    # self.products.find
-    self.products.reviews.order(:star_rating).last
+    # review = self.review.order(:star_rating).last
+    self.reviews.order(:star_rating).last.product
     end
 end
