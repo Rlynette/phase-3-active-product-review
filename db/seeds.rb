@@ -23,4 +23,12 @@ puts "Creating reviews..."
 # *****************************************************************
 # Create Reviews Here
 
+#    t.integer "star_rating"
+#     t.string "comment"
+#     t.integer "user_id"
+#     t.integer "product_id"
+review1 = Review.create(star_rating: 8, comment: "Good Product", user_id: 1, product_id: 1)
+review1 = Review.create(star_rating: 4, comment: "Good Product", user_id: 2, product_id: 1)
+review1 = Review.create(star_rating: 6, comment: "Good Product", user_id: 1, product_id: 2)
+
 puts "Seeding done!"
